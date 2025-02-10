@@ -1,5 +1,5 @@
 1) Create a Vertual Environment
-    >> py -m venv env
+    >> py -m venv <env>
 
 2) Activate the environment
     >> env\scripts\activate
@@ -20,5 +20,19 @@
     >> pip install -r requirements.txt
 
 8) Create a New Django Project
-    >> django-admin startproject core .
+    >> django-admin startproject <core> .
+
+9) Apps Create a new Django Project
+    >> py manage.py startapp <apps>
+
+10) Migrations
+    >> py manage.py makemigrations
     
+11) Migrate
+    >> py manage.py migrate
+
+12) Create a Superadmin
+    >> py manage.py createsuperuser
+
+13) Surver Run
+    >> py manage.py runserver
