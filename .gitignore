@@ -148,7 +148,7 @@ GitHub.sublime-settings
 **/.DS_Store
 .idea
 
-
+# Ignore Database
 db.sqlite3
 
 

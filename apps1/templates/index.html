@@ -4,9 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        body {
+            margin: 200px;
+        }
+    </style>
 </head>
 <body>
     <h1>This is my Home page</h1>
+
+    <p>Name: {{name}}</p>
+    <p>Designation: {{designation}}</p>
+    <p>Department: {{department}}</p>
+
+    <p>Hobby: 
+        {% for h in hobby %}
+            <span style="font-weight: bold;">{{h}},</span>
+        {% endfor %}
+    </p>
     
 </body>
 </html>
