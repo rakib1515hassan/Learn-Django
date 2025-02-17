@@ -9,20 +9,34 @@
         body {
             margin: 200px;
         }
+
+        .title{
+            font-family: sans-serif;
+            font-size: 20px;
+            padding: 2px 4px;
+        }
     </style>
 </head>
 <body>
     <h1>This is my Home page</h1>
 
-    <p>Name: {{name}}</p>
-    <p>Designation: {{designation}}</p>
-    <p>Department: {{department}}</p>
+    <p class="title">Name: {{name}}</p>
+    <p class="title">Designation: {{designation}}</p>
+    <p class="title">Department: {{department}}</p>
 
-    <p>Hobby: 
+    <p class="title">Hobby: 
         {% for h in hobby %}
             <span style="font-weight: bold;">{{h}},</span>
         {% endfor %}
     </p>
+
+
+    <h1>Parent Info:</h1><br>
+
+    <span class="title">Father Name : {{parents.father_name}}</span><br>
+    <span class="title">Mother Name : {{parents.mother_name}}</span><br>
+    <span class="title">City : {{parents.city}}</span><br>
+
     
 </body>
 </html>
